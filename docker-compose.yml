@@ -1,0 +1,12 @@
+version: "3"
+services:
+  moralesfront:
+    image: node:latest
+    container_name: moralesfront
+    working_dir: /app
+    ports:
+      - 3000:3000
+    restart: always
+    volumes:
+      - ./:/app
+    tty: true
